@@ -25,12 +25,6 @@ Predict whether a customer will subscribe to a term deposit (`yes` or `no`) usin
 * **Number of Records:** 41,188
 * **Number of Features:** 20 input features + 1 target variable
 
-### Target Variable
-
-* `y`:
-
-  * `yes` → Customer subscribed (Purchase)
-  * `no` → Customer did not subscribe
 
 ### Feature Types
 
@@ -69,46 +63,6 @@ These parameters help control overfitting while maintaining interpretability.
 
 ---
 
-## Repository Structure
-
-```
-bank-marketing-decision-tree/
-│
-├── data/
-│   └── bank-additional-full.csv
-│
-├── src/
-│   └── decision_tree_model.py
-│
-├── notebooks/
-│   └── decision_tree_bank_marketing.ipynb
-│
-├── results/
-│   └── evaluation_metrics.txt
-│
-├── README.md
-├── requirements.txt
-└── .gitignore
-```
-
----
-
-## How to Run the Project
-
-1. Clone the repository
-2. Install dependencies:
-
-   ```bash
-   pip install -r requirements.txt
-   ```
-3. Run the Python script:
-
-   ```bash
-   python src/decision_tree_model.py
-   ```
-
----
-
 ## Future Improvements
 
 * Handle class imbalance using SMOTE or class weights
@@ -117,7 +71,3 @@ bank-marketing-decision-tree/
 * Exclude `duration` feature for a strictly realistic pre-call model
 
 ---
-
-## References
-
-Moro, S., Cortez, P., & Rita, P. (2014). *A Data-Driven Approach to Predict the Success of Bank Telemarketing*. Decision Support Systems.
